@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #152F42;
+  --primary-color-dark: #306a94;
+  --text-dark: #333333;
+  --nav-dark: #717171;
+  --text-light: #3b3933;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Bebas Neue", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    color: var(--text-light);
+}
+  
+.navbar-left .logo {
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: var(--header-font)
+}
+  
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.search-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--white);
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.tab-content {
+    display: none;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white);
+    color: var(--text-dark);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+}
+
+.event-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.event-date {
+    flex: 0 0 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.event-date .event-day {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.event-date .event-month {
+    font-size: 1rem;
+}
+
+.event-time {
+    flex: 0 0 120px; 
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem; 
+}
+
+.event-time .event-location {
+    font-size: 0.9rem;
+    margin-top: 0.3rem; 
+    color: #ccc;
+}
+
+.event-name {
+    flex: 1;
+    font-size: 1rem;
+    padding-left: 1rem;
+    white-space: nowrap; 
+}
+
+.donation-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem auto; 
+    max-width: 1200px; 
+    padding: 0 2rem; 
+}
+
+.donation-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.donation-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.donation-info {
+    padding: 1rem;
+    color: var(--text-dark);
+}
+
+.donation-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.donation-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    height: 100%;
+    border-radius: 4px;
+}
+
+.days-left {
+    font-size: 0.9rem;
+    color: var(--nav-dark);
+}
+
+.volunteer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.volunteer-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--white);
+    color: var(--text-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.volunteer-info {
+    flex: 1;
+}
+
+.volunteer-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.volunteer-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.join-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.join-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+
+@media (max-width: 1024px) {
+    .donation-card {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-card {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .volunteer-card img {
+        width: 100%;
+        height: auto; 
+        margin-bottom: 1rem;
+    }
+
+    .volunteer-info {
+        text-align: center;
+    }
+
+    .join-btn {
+        width: auto; 
+        text-align: center; 
+        margin: 0 auto; 
+    }
+
+    .donation-container {
+        justify-content: center; 
+    }
+
+    .donation-card {
+        width: 100%; 
+    }
+}
+

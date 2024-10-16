@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #152F42;
+    --primary-color-dark: #306a94;
+    --white: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--white);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+    overflow: hidden;
+}
+
+.profile-container {
+    color: var(--primary-color);
+    max-width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.profile-pic {
+    display: block;
+    width: 120px; 
+    height: 120px; 
+    margin: 0 auto 20px;
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-button {
+    text-align: center; 
+}
+
+.form-button button {
+    margin: 10px 5px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-button button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        max-width: 95%; 
+    }
+
+    .profile-pic {
+        width: 100px; 
+        height: 100px; 
+    }
+}
