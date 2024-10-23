@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+:root {
+  --primary-color: #152F42;
+  --primary-color-dark: #306a94;
+  --text-dark: #333333;
+  --nav-dark: #717171;
+  --text-light: #3b3933;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Bebas Neue", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    display: none; 
+}
+
+.main-content.active {
+    display: block; 
+}
+
+.event-form, .program-form {
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.event-form h2, .program-form h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.event-form input, .event-form select, .program-form input, .program-form select, .program-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+.event-form button, .program-form button {
+    width: 130px;
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.event-form button:hover, .program-form button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.event-table-container, .program-table-container {
+    margin-top: 1%;
+    max-width: 800px; 
+    margin-left: 10%;
+    overflow-x: auto; 
+    margin-bottom: 3%;
+}
+
+
+.search-bar-event,
+.search-bar-program {
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 20px; 
+    margin-right: 77px;
+}
+
+.search-input-event,
+.search-input-program {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 360px;
+    margin-right: 10px; 
+    transition: border-color 0.3s; 
+}
+
+.search-input-event:focus,
+.search-input-program:focus {
+    border-color: var(--primary-color); 
+    outline: none;
+}
+
+.search-button-event,
+.search-button-program {
+    padding: 10px 15px; 
+    background-color: var(--primary-color); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.search-button-event:hover,
+.search-button-program:hover {
+    background-color: var(--primary-color-dark); 
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+thead {
+    background-color: var(--primary-color); 
+    color: var(--white); 
+}
+
+th, td {
+    padding: 12px;
+    text-align: center; 
+    border: 1px solid #ccc; 
+    word-wrap: break-word;
+}
+
+th {
+    font-weight: bold; 
+}
+
+th, td {
+    max-width: 150px; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tbody tr:hover {
+    background-color: #eaeaea; 
+}
+
+.event-table-container button, .program-table-container button {
+    background-color: var(--primary-color); 
+    color: var(--white); 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.event-table-container button:hover, .program-table-container button:hover {
+    background-color: #306a94;
+}
